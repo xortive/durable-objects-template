@@ -1,0 +1,14 @@
+name = "worker"
+type = "javascript"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+
+[builder_config]
+build_command = "npm run build"
+upload_format = "modules"
+
+[durable_objects]
+implements = [{class_name = "Counter", namespace_name = "Counter"}]
+uses = [{binding = "Counter", namespace_name = "Counter"}]
