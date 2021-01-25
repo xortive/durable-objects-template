@@ -6,7 +6,7 @@ route = ""
 zone_id = ""
 
 [builder_config]
-build_command = "npm install && npm run build"
+command = "npm install && npm run build"
 upload_format = "modules"
 src_dir = "src"
 build_dir = "dist"
