@@ -6,8 +6,7 @@ route = ""
 zone_id = ""
 
 [builder_config]
-# "npm install && npm run build" won't work here, && will be treated as an arg to npm install
-build_command = "npm run build"
+build_command = "npm install && npm run build"
 upload_format = "modules"
 src_dir = "src"
 build_dir = "dist"
