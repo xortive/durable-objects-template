@@ -5,11 +5,9 @@ workers_dev = true
 route = ""
 zone_id = ""
 
-[builder_config]
+[build]
 command = "npm install && npm run build"
 upload_format = "modules"
-src_dir = "src"
-build_dir = "dist"
 
 [durable_objects]
 implements = [{class_name = "Counter", namespace_name = "Counter"}]
